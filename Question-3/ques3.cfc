@@ -1,12 +1,9 @@
 <cfcomponent>
-   <cffunction name="findDivisibleByThree" returntype="string">
-      <cfargument name="numbers" type="string" required="true">
-      <cfif arguments.numbers EQ "0">
-         <cfreturn "0 is not divisible by 3">
-      </cfif>
-      <cfset numbersArray = ListToArray(arguments.numbers)>
+   <cffunction name="getRating" returntype="string">
+      <cfargument name="ratings" type="string" required="true">
+      <cfset numbers = ListToArray(arguments.ratings)>
       <cfset divisibleNumbers = []>
-      <cfloop array="#numbersArray#" index="num">
+      <cfloop array="#numbers#" index="num">
          <cfif num MOD 3 EQ 0>
             <cfset arrayAppend(divisibleNumbers, num)>
          </cfif>
