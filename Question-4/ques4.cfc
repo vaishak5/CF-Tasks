@@ -3,10 +3,10 @@
         <cfset var datas = {}>
         <cfset var todaysDate = now()>
         <cfset datas.todaysDate = dateFormat(todaysDate, "dd-mm-yyyy")>
-        <cfset datas.currentMonthNum = DateFormat(todaysDate, "mm")>
-        <cfset datas.currentMonthWord = DateFormat(todaysDate, "MMMM")>
-        <cfset datas.lastFriday = DateFormat(DateAdd("d", -((DayOfWeek(todaysDate) + 1) % 7), todaysDate), "dd-mm-yyyy")>
-        <cfset datas.lastDay = DateFormat(DateAdd("d", -1, DateAdd("m", 1, createDate(year(now()), month(now()), 1))), "dd-mm-yyyy")>
+        <cfset datas.currentMonthNum = dateFormat(todaysDate, "mm")>
+        <cfset datas.currentMonthWord = dateFormat(todaysDate, "MMMM")>
+        <cfset datas.lastFriday = dateFormat(dateAdd("d", -((DayOfWeek(todaysDate) + 1) % 7), todaysDate), "dd-mm-yyyy")>
+        <cfset datas.lastDay = dateFormat(dateAdd("d", -1, dateAdd("m", 1, createDate(year(now()), month(now()), 1))), "dd-mm-yyyy")>
         <cfset datas.lastFiveDays = []>
         <cfloop from="0" to="4" index="i">
             <cfset day = dateAdd("d", -i, todaysDate)>
