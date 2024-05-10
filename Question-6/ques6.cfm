@@ -7,7 +7,7 @@
     <h2>Entering some Values</h2>
     <form action="ques6.cfm" method="post">
         <label for="key">Enter any Key:</label>
-        <input type="text" name="key"><br>
+        <input type="text" name="key"><br><br>
         <label for="value">Enter any Value:</label>
         <input type="text" name="value"><br><br>
         <input type="submit" name="submit" value="Submit"><br>

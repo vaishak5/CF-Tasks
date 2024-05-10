@@ -7,7 +7,6 @@
 .mainConts{
     margin: 0 auto 10px auto;
     width: 640px;
-    border: 1px solid #cccccc;
     background-color: white;
 }
 .secondMain{
@@ -53,7 +52,7 @@
     gap: 10px;
     color: #444444;
 }
-.btnOne{
+.btnOne, .btnSd{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -206,4 +205,27 @@
 }
 body{
     background-color: hsl(80, 100%, 30%);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+
+}
+.poweredTxt{
+    font-size: 10px;
+    color: #606060;
+    margin: 0px;
+
+}
+.footerSet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.see{
+    font-size: 12px;
+    color: #606060;
+    margin: 0px;
+    padding-bottom: 50px ;
 }

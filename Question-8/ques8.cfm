@@ -2,30 +2,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Entering Values</title>
- </head>
+    <title>Entering Keys and Values</title>
+</head>
 <body>
-<h2>Entering some Values</h2>
-    <form action="ques7.cfm" method="post">
+    <h2>Entering some Values</h2>
+    <form action="ques8.cfm" method="post">
         <label for="key">Enter any Key:</label>
         <input type="text" name="key" required><br><br>
         <label for="value">Enter any Value:</label>
         <input type="text" name="value" required><br><br>        
-        <input type="submit" name="submit" value="Submit">
-    </form><br>
+        <input type="submit" name="submit" value="Submit"><br>
+    </form>
     <cfif StructKeyExists(form,"submit")>
-        <cfinvoke component = "ques7" method ="getIdentify">
+        <cfinvoke component="ques8" method="getIdentify">
             <cfinvokeargument name="key" value="#form.key#">
             <cfinvokeargument name="value" value="#form.value#">
         </cfinvoke>
-        <cfdump var ="#session.struct#">
+        <cfdump var="#session.struct#">
     </cfif>  
 </body>
 </html>
-
-
-
-
 
 
 
