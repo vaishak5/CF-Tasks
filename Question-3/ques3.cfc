@@ -9,7 +9,7 @@
          </cfif>
       </cfloop>
       <cfif ArrayLen(divisibleNumbers) EQ 0>
-         <cfreturn "None">
+         <cfreturn "The given number is not Divisible by 3">
       <cfelse>
          <cfreturn ArrayToList(divisibleNumbers, ",")> 
       </cfif>
